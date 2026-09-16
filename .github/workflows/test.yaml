@@ -1,0 +1,15 @@
+name: Test Docker image
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build and run test image
+        run: docker compose up --build --abort-on-container-exit --exit-code-from bed-server
