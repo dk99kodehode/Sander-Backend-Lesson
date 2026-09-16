@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "node .",
-    "test": "docker compose build && docker compose up"
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
