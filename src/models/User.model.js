@@ -5,7 +5,7 @@ import { email, uuid } from "zod";
 
 // default value gjør ting før deg
 
-const user = sequelize.define("User", {
+const user = sequelize.define("Users", {
   id: {
     type: DataTypes.UUID,
     defaultValue: DataTypes.UUIDV4,

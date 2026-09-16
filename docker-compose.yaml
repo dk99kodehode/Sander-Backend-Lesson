@@ -21,8 +21,6 @@ services:
       MSSQL_SA_PASSWORD: Supergigastrongpassword123!321
     ports:
       - "1434:1433"
-    volumes:
-      - mssql_data:/var/opt/mssql
     healthcheck:
       test:
         [
@@ -33,6 +31,3 @@ services:
       timeout: 5s
       retries: 10
       start_period: 20s
-
-volumes:
-  mssql_data:
