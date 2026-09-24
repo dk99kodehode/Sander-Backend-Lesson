@@ -1,5 +1,5 @@
-import sequelize from "../config/database.js";
-import User from "../models/User.model.js";
+import sequelize from "../../config/database.js";
+import User from "../../models/User.model.js";
 
 /// cant be just Users
 // SELECT * FROM Tables aka t_Users"

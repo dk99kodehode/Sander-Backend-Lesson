@@ -1,6 +1,6 @@
 import { id } from "zod/locales";
-import sequelize from "../config/database.js";
-import user from "../models/User.model.js";
+import sequelize from "../../config/database.js";
+import user from "../../models/User.model.js";
 import { where } from "sequelize";
 
 // stopper sql injections

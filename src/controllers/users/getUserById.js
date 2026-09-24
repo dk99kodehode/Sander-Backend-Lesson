@@ -1,7 +1,7 @@
 // sequelize dot sync
 
-import sequelize from "../config/database.js";
-import User from "../models/User.model.js";
+import sequelize from "../../config/database.js";
+import User from "../../models/User.model.js";
 
 export const getUserById = async (req, res) => {
   const { userId } = req.params;
